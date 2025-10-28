@@ -1,0 +1,101 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    background: #eaf3ee;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+}
+
+main#feed {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+article.post {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.post-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    object-fit: cover;
+}
+
+.post-user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-location {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.post-img {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.post-footer {
+    padding: 1rem;
+}
+
+.post-icons {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.post-icon {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    transition: transform 0.2s, filter 0.2s;
+    filter: grayscale(60%);
+}
+
+.post-icon:focus,
+.post-icon:hover {
+    transform: scale(1.2);
+    filter: none;
+    outline: 2px solid #2d8f7b;
+}
+
+.post-likes {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+.post-caption {
+    font-size: 1rem;
+    color: #333;
+}
+
+@media (max-width: 500px) {
+    main#feed {
+        max-width: 100%;
+        margin: 0;
+        padding: 0.5rem;
+    }
+    article.post {
+        border-radius: 0;
+    }
+}
+
